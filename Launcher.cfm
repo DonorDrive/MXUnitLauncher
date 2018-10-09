@@ -1,6 +1,6 @@
 <cfsilent>
 	<!--- The testDirectory variable should be the path from the webroot to and including the root directory which contains test components --->
-	<cfset testDirectory = "/donordrivecore/tests" />
+	<cfset testDirectory = "/test/folder/path" />
 	<cfdirectory action="list" directory="#expandPath(testDirectory)#" name="files" recurse="true"  />
 	<cfset pathSeparator = createObject("java", "java.io.File").separator />
 	<!--- Delete any folders before the webroot --->
